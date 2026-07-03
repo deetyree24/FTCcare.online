@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Federal  Trade Commission</title>
+<title>Federal Trade Commission</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -20,6 +20,15 @@ body{font-family:Arial,Helvetica,sans-serif;background:#eef5fb;color:#071d3a}
 
 .nav{display:flex;gap:28px;font-size:17px;color:#09254a}
 .nav span{cursor:default}
+
+.menu-btn{display:none}
+
+@media(max-width:768px){
+  .menu-btn{display:block;padding:14px 25px;background:#0667bd;color:white;border:0;font-size:18px}
+  .nav{display:none;flex-direction:column;width:100%}
+  .nav.show{display:flex}
+  .nav span{padding:15px;border-bottom:1px solid #ddd}
+}
 
 .hero{
   min-height:560px;
@@ -107,7 +116,9 @@ An official website of the United States government
     </div>
   </div>
 
-  <div class="nav">
+<button class="menu-btn" onclick="toggleMenu()">Menu ☰</button>
+
+  <div class="nav" id="mobileMenu">
     <span>Enforcement</span>
     <span>Policy</span>
     <span>Advice & Guidance</span>
@@ -202,6 +213,12 @@ An official website of the United States government
     <p>Get the latest consumer protection news from the FTC.</p>
   </div>
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
