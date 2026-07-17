@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.breadcrumb{
+    margin-top:40px;
+    font-size:20px;
+}
+
+.fake-link{
+    color:#0B73FF;
+    user-select:none;
+}
+
+.gray{
+    color:#666;
+}
+
+.content{
+    text-align:center;
+    margin-top:60px;
+}
+
+.illustration{
+    width:520px;
+    height:350px;
+    margin:auto;
+    position:relative;
+}
+
+/* Browser */
+
+.browser{
+    width:300px;
+    height:170px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    margin:auto;
+    position:relative;
+}
+
+.browser-top{
+    height:40px;
+    background:#0B73FF;
+    border-radius:8px 8px 0 0;
+}
+
+.search-box{
+    width:220px;
+    height:22px;
+    background:#fff;
+    border-radius:4px;
+    position:absolute;
+    top:9px;
+    left:40px;
+}
+
+.big404{
+    position:absolute;
+    top:75px;
+    width:100%;
+    text-align:center;
+    font-size:90px;
+    font-weight:bold;
+    color:#EEF2FA;
+}
+
+/* Ladder */
+
+.ladder{
+    position:absolute;
+    left:248px;
+    top:55px;
+    width:4px;
+    height:220px;
+    background:#999;
+}
+
+.ladder::before{
+    content:"";
+    position:absolute;
+    left:-16px;
+    width:36px;
+    height:220px;
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 12px,
+        #999 12px,
+        #999 15px
+    );
+}
+
+/* Center Person */
+
+.center{
+    position:absolute;
+    left:237px;
+    top:90px;
+}
+
+.center .head{
+    width:18px;
+    height:18px;
+    background:#333;
+    border-radius:50%;
+}
+
+.center .body{
+    width:20px;
+    height:65px;
+    background:#0B73FF;
+    margin:auto;
+}
+
+/* Left */
+
+.left{
+    position:absolute;
+    left:85px;
+    top:170px;
+}
+
+.left .bubble{
+    width:42px;
+    height:42px;
+    background:#31C95D;
+    border-radius:50%;
+    position:absolute;
+    top:-35px;
+    left:-20px;
+}
+
+.left .bubble::after{
+    content:"?";
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    position:absolute;
+    left:15px;
+    top:8px;
+}
+
+.left .head{
+    width:18px;
+    height:18px;
+    background:#333;
+    border-radius:50%;
+    margin:auto;
+}
+
+.left .body{
+    width:22px;
+    height:55px;
+    background:#FFC928;
+    margin:auto;
+}
+
+.left .legs{
+    width:4px;
+    height:45px;
+    background:#0B73FF;
+    margin:auto;
+    box-shadow:18px 0 #0B73FF;
+}
+
+/* Right */
+
+.right{
+    position:absolute;
+    right:85px;
+    top:170px;
+}
+
+.right .bubble{
+    width:42px;
+    height:42px;
+    background:#5DBDFF;
+    border-radius:50%;
+    position:absolute;
+    top:-35px;
+    right:-20px;
+}
+
+.right .bubble::after{
+    content:"...";
+    color:#fff;
+    font-size:18px;
+    position:absolute;
+    left:10px;
+    top:9px;
+}
+
+.right .head{
+    width:18px;
+    height:18px;
+    background:#333;
+    border-radius:50%;
+    margin:auto;
+}
+
+.right .body{
+    width:22px;
+    height:55px;
+    background:#34C96B;
+    margin:auto;
+}
+
+.right .legs{
+    width:4px;
+    height:45px;
+    background:#0B73FF;
+    margin:auto;
+    box-shadow:18px 0 #0B73FF;
+}
+
+h1{
+    margin-top:45px;
+    font-size:58px;
+    font-weight:500;
+}
+
+.desc{
+    margin:20px auto;
+    max-width:900px;
+    color:#666;
+    font-size:22px;
+    line-height:1.6;
+}
+
+.button{
+    display:inline-block;
+    margin-top:35px;
+    background:#0B73FF;
+    color:#fff;
+    padding:16px 40px;
+    border-radius:5px;
+    font-size:18px;
+    user-select:none;
+}
+
+@media(max-width:768px){
+
+.illustration{
+    transform:scale(.75);
+}
+
+h1{
+    font-size:42px;
+}
+
+.desc{
+    font-size:18px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="breadcrumb">
+<span class="fake-link">Home</span>
+<span class="gray"> &gt; Something's gone wrong.</span>
+</div>
+
+<div class="content">
+
+<div class="illustration">
+
+<div class="browser">
+<div class="browser-top"></div>
+<div class="search-box"></div>
+</div>
+
+<div class="big404">404</div>
+
+<div class="ladder"></div>
+
+<div class="center">
+<div class="head"></div>
+<div class="body"></div>
+</div>
+
+<div class="left">
+<div class="bubble"></div>
+<div class="head"></div>
+<div class="body"></div>
+<div class="legs"></div>
+</div>
+
+<div class="right">
+<div class="bubble"></div>
+<div class="head"></div>
+<div class="body"></div>
+<div class="legs"></div>
+</div>
+
+</div>
+
+<h1>Page not found</h1>
+
+<p class="desc">
+Apologies, but we can't find the page you're looking for.
+But we're here to help you find your way back.
+Check out our <span class="fake-link">homepage</span> or use the search option above to find what you need.
+</p>
+
+<div class="button">
+Go to Homepage
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
